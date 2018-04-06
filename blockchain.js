@@ -21,9 +21,9 @@ class Blockchain {
     let hash = sha256(block.key);
 
     while(!hash.startsWith("0000")) { // calculation to satisfy the condition for finding hash (Prof of work - reward)
-      block.nonce += 1
-      hash = sha256(block.key)
-      console.log(hash)
+      block.nonce += 1;
+      hash = sha256(block.key);
+      console.log(hash);
     }
 
     return hash;
